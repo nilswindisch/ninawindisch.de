@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+  font-family: 'Muli', sans-serif;
+  // font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  transform: rotate(-7deg);
+  justify-content: center;
+  margin-bottom: -50px;
+  padding-left: 250px;
+}
+
+.header__img {
+  transform: rotate(7deg);
+  margin-left: -275px;
+}
+
+.header__title {
+  padding-top: 200px;
+
+  h1 {
+    padding-left: 20px;
+    font-size: 400%;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+main {
+  transform: rotate(-7deg);
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-weight: 300;
+  width: 150%;
+  margin-left: -25vw;
+  padding: 50px 0 25px;
+
+  a {
+    color: white;
+  }
+}
+
+.content {
+  transform: rotate(7deg);
+  width: 350px;
+
+  h2 {
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-style: italic;
+    margin-bottom: 16px;
+  }
+
+  p,
+  ul {
+    font-size: 18px;
+  }
+
+  li {
+    list-style-type: none;
+    margin-bottom: 8px;
+    line-height: 1.33;
+
+    a {
+      display: block;
+    }
+  }
+}
+
+.spieleentwicklerin {
+  margin-right: 50px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.contact {
+  width: 800px;
+  margin: 0 auto;
+  text-align: right;
+  font-weight: 400;
+  font-size: 133%;
+}
