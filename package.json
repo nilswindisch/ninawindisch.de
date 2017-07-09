@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "concurrently --kill-others --prefix \"[{name}]\" --names \"SCSS,SERVE\" \"nodemon -e scss -x ./bin/monitor-scss.sh\" \"live-server --wait=1000 --browser='Google Chrome'\"",
-    "css": "./bin/process-scss.sh"
+    "css": "./bin/process-scss.sh",
+    "prod": "node-sass --output-style compressed '$(PWD)'/scss/style.scss | postcss --use autoprefixer --no-map -b 'last 2 versions' > '$(PWD)'/css/style.css"
   },
   "repository": {
     "type": "git",
