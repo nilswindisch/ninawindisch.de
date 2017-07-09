@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "concurrently --kill-others --prefix \"[{name}]\" --names \"SCSS,SERVE\" \"nodemon -e scss -x ./bin/monitor-scss.sh\" \"live-server --wait=1000 --browser='Google Chrome'\""
+    "test": "concurrently --kill-others --prefix \"[{name}]\" --names \"SCSS,SERVE\" \"nodemon -e scss -x ./bin/monitor-scss.sh\" \"live-server --wait=1000 --browser='Google Chrome'\"",
+    "css": "./bin/process-scss.sh"
   },
   "repository": {
     "type": "git",
