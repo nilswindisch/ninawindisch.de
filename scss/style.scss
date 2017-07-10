@@ -1,48 +1,73 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import "variables";
+@import "reset";
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+html {
+  overflow-x: hidden;
 }
 
 .page {
+  font-family: $font-family;
   margin: 0;
   padding: 0;
-  font-family: 'Muli', sans-serif;
 }
 
 header {
   display: flex;
-  transform: rotate(-7deg);
   justify-content: center;
   margin-bottom: -110px;
-  padding-left: 250px;
+  padding-left: -50vw;
+  transform: rotate(-7deg);
+
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transform: rotate(0deg);
+  }
 }
 
 .header__img {
   transform: rotate(7deg);
-  margin-left: -275px;
+
+  @media (max-width: 767px) {
+    margin: 0 0 -90px;
+    transform: rotate(0deg);
+
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 .header__title {
   padding-top: 140px;
 
   h1 {
-    padding-left: 20px;
     font-size: 400%;
     font-weight: 900;
     line-height: 1;
+    padding-left: 20px;
     text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      font-size: 12vw;
+      margin: 0 auto;
+      padding: 0;
+      text-align: left;
+      transform: rotate(-7deg);
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 20px 0;
   }
 }
 
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 
   &:hover {
     text-decoration: underline;
@@ -50,28 +75,43 @@ a {
 }
 
 main {
-  transform: rotate(-7deg);
-  display: flex;
-  justify-content: center;
   background-color: black;
   color: white;
+  display: flex;
   font-weight: 300;
-  width: 150%;
-  margin-left: -25vw;
-  padding: 50px 0 25px;
+  justify-content: center;
+  margin-left: -50vw;
+  padding: 75px 0 25px;
+  transform: rotate(-7deg);
+  width: 200vw;
 
   a {
     color: white;
   }
+
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  transform: rotate(7deg);
+  width: 100vw;
+
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .content {
-  transform: rotate(7deg);
   width: 350px;
 
   h2 {
-    margin-bottom: 16px;
     letter-spacing: 1px;
+    margin-bottom: 16px;
   }
 
   p {
@@ -85,18 +125,42 @@ main {
   }
 
   li {
+    line-height: 1.33;
     list-style-type: none;
     margin-bottom: 8px;
-    line-height: 1.33;
 
     a {
       display: block;
     }
   }
+
+  @media (max-width: 767px) {
+    margin: 0 5vw;
+    padding-bottom: 24px;
+    width: 90vw;
+  }
+}
+
+.autorin {
+  @media (min-width: 768px) and (max-width: 1000px) {
+    margin-top: -6vw;
+  }
+
+  @media (min-width: 1001px) {
+    margin-top: -4vw;
+  }
+
+  @media (min-width: 1400px) {
+    margin-top: -2vw;
+  }
 }
 
 .spieleentwicklerin {
   margin-right: 50px;
+
+  @media (max-width: 767px) {
+    margin-right: 0;
+  }
 }
 
 h2 {
@@ -105,9 +169,15 @@ h2 {
 }
 
 .contact {
-  width: 800px;
+  font-size: 133%;
+  font-weight: 900;
   margin: 0 auto;
   text-align: right;
-  font-weight: 400;
-  font-size: 133%;
+  width: 750px;
+
+  @media (max-width: 767px) {
+    margin: 0;
+    padding: 0 5vw;
+    width: 100%;
+  }
 }
