@@ -1,3 +1,9 @@
+html {
+  @media (max-width: 767px) {
+    // overflow: hidden;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,15 +27,37 @@ header {
   justify-content: center;
   margin-bottom: -110px;
   padding-left: 250px;
+
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+    // flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    transform: rotate(0deg);
+    text-align: center;
+  }
 }
 
 .header__img {
   transform: rotate(7deg);
   margin-left: -275px;
+
+  @media (max-width: 767px) {
+    transform: rotate(0deg);
+    margin: 0 0 -90px;
+    padding: 10px 0 0;
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 .header__title {
   padding-top: 140px;
+
+  @media (max-width: 767px) {
+    padding-top: 20px;
+  }
 
   h1 {
     padding-left: 20px;
@@ -37,6 +65,15 @@ header {
     font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      transform: rotate(-7deg);
+      width: 70%;
+      padding: 0;
+      margin: 0 auto;
+      font-size: 12vw;
+      text-align: left;
+    }
   }
 }
 
@@ -63,11 +100,25 @@ main {
   a {
     color: white;
   }
+
+  @media (max-width: 767px) {
+    transform: rotate(0deg);
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .content {
   transform: rotate(7deg);
   width: 350px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    transform: rotate(0deg);
+    padding: 0 10vw;
+  }
 
   h2 {
     margin-bottom: 16px;
@@ -105,9 +156,15 @@ h2 {
 }
 
 .contact {
-  width: 800px;
+  width: 650px;
   margin: 0 auto;
   text-align: right;
-  font-weight: 400;
+  font-weight: 900;
   font-size: 133%;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin: 0;
+    padding: 0 5vw;
+  }
 }
