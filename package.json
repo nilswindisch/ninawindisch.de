@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/nilswindisch/ninawindisch.de#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.1",
+    "autoprefixer": "^8.0.0",
     "concurrently": "^3.4.0",
     "cssnano": "^3.10.0",
     "live-server": "^1.2.0",
@@ -27,7 +27,7 @@
     "nodemon": "^1.11.0",
     "postcss": "^6.0.1",
     "postcss-cli": "^5.0.0",
-    "stylelint-config-standard": "^17.0.0",
+    "stylelint-config-standard": "^18.0.0",
     "stylelint-order": "^0.7.0"
   }
 }
