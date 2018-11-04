@@ -23,7 +23,7 @@
     "concurrently": "^3.4.0",
     "cssnano": "^3.10.0",
     "live-server": "^1.2.0",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.10.0",
     "nodemon": "^1.11.0",
     "postcss": "^6.0.1",
     "postcss-cli": "^5.0.0",
