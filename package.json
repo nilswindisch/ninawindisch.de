@@ -22,7 +22,7 @@
     "autoprefixer": "^8.0.0",
     "concurrently": "^3.4.0",
     "cssnano": "^3.10.0",
-    "live-server": "^1.2.0",
+    "live-server": "^1.2.1",
     "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
     "postcss": "^6.0.1",
