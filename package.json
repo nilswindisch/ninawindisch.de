@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/nilswindisch/ninawindisch.de#readme",
   "devDependencies": {
-    "autoprefixer": "^8.0.0",
+    "autoprefixer": "^9.7.6",
     "concurrently": "^3.4.0",
     "cssnano": "^3.10.0",
     "live-server": "^1.2.0",
